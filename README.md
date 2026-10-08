@@ -1,4 +1,4 @@
-# soccerfield_web
+# soccerfield_frontend
 
 Frontend Vue 3 cho hệ thống đặt sân bóng Soccer Field Manager, gồm ba luồng: người đặt sân, chủ sân và admin.
 
