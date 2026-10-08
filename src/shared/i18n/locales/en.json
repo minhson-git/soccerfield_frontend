@@ -1,11 +1,35 @@
 {
   "app": {
-    "name": "Soccer Field"
+    "name": "Sân Nhà"
   },
   "common": {
     "logout": "Log out",
     "language": "Language",
-    "backHome": "Back to home"
+    "backHome": "Back to home",
+    "back": "Back",
+    "close": "Close",
+    "loading": "Loading…",
+    "processing": "Processing…"
+  },
+  "theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme"
+  },
+  "nav": {
+    "main": "Main navigation",
+    "breadcrumb": "Breadcrumb",
+    "home": "Home",
+    "book": "Book a field",
+    "nearby": "Fields near you",
+    "howItWorks": "How it works",
+    "contact": "Contact",
+    "login": "Log in",
+    "bookNow": "Book now",
+    "myBookings": "My bookings"
+  },
+  "footer": {
+    "contact": "Hotline [Phone number] · [Email]",
+    "forOwners": "For field owners"
   },
   "roles": {
     "CUSTOMER": "Customer",
@@ -21,10 +45,135 @@
     "submit": "Log in",
     "loginFailed": "Incorrect username or password"
   },
+  "date": {
+    "weekdayShort": {
+      "0": "Sun",
+      "1": "Mon",
+      "2": "Tue",
+      "3": "Wed",
+      "4": "Thu",
+      "5": "Fri",
+      "6": "Sat"
+    }
+  },
+  "field": {
+    "type": {
+      "FIVE_A_SIDE": "5-a-side",
+      "SEVEN_A_SIDE": "7-a-side",
+      "ELEVEN_A_SIDE": "11-a-side"
+    },
+    "typePlayers": {
+      "FIVE_A_SIDE": "5-a-side field",
+      "SEVEN_A_SIDE": "7-a-side field",
+      "ELEVEN_A_SIDE": "11-a-side field"
+    },
+    "players": "{count} players",
+    "surface": {
+      "ARTIFICIAL": "artificial turf",
+      "NATURAL": "natural grass"
+    }
+  },
+  "amenity": {
+    "LIGHTING": "Floodlights",
+    "PARKING": "Parking",
+    "LOCKER_ROOM": "Locker room",
+    "CANTEEN": "Canteen"
+  },
+  "branch": {
+    "photoPlaceholder": "Venue photo",
+    "viewGallery": "View gallery",
+    "fromRate": "From {price}/hour",
+    "viewSchedule": "View schedule & book",
+    "openHours": "Open {open} – {close}",
+    "share": "Share",
+    "linkCopied": "Link copied",
+    "notFound": "Venue not found"
+  },
+  "search": {
+    "area": "Area",
+    "anyArea": "All areas",
+    "fieldType": "Field type",
+    "anyType": "All field types",
+    "date": "Date",
+    "timeOfDay": "Time of day",
+    "timesOfDay": {
+      "MORNING": "Morning (05:00 – 11:00)",
+      "AFTERNOON": "Afternoon (11:00 – 17:00)",
+      "EVENING": "Evening (17:00 – 23:00)"
+    },
+    "submit": "Find a free field"
+  },
+  "home": {
+    "badge": "5-a-side · 7-a-side · 11-a-side",
+    "titleLine1": "Pick a time.",
+    "titleLine2": "Lock the pitch.",
+    "titleLine3": "Play.",
+    "intro": "See live availability, hold a slot in a few taps and get confirmed instantly — no need to call the field owner.",
+    "pitchAlt": "Football pitch diagram",
+    "nearestSlot": "Nearest free slot",
+    "nearestSlotValue": "Tonight · {time} · {field}",
+    "nearbyTitle": "Fields near you",
+    "noResults": "No field matches these filters. Try removing some.",
+    "stepsTitle": "Three steps to a pitch",
+    "step1Title": "Find a free field",
+    "step1Text": "Filter by area, field type and time. Schedules update live from the owner.",
+    "step2Title": "Hold & pay the deposit",
+    "step2Text": "Pick a time, add extras, pay the deposit by e-wallet or QR bank transfer.",
+    "step3Title": "Call the team, play",
+    "step3Text": "Share the booking link with your team and split the cost in the group.",
+    "startBooking": "Start booking"
+  },
+  "booking": {
+    "fieldType": "Field type",
+    "date": "Date",
+    "pickDate": "Pick a date",
+    "startTime": "Start time",
+    "duration": "Duration",
+    "stepFieldType": "1 · Field type",
+    "stepDate": "2 · Date",
+    "stepStartTime": "3 · Start time",
+    "stepDuration": "4 · Duration",
+    "scheduleTitle": "Pick your slot",
+    "peakHint": "Peak rates apply from {time}",
+    "perMatch": "{minutes} min / match",
+    "minutes": "{count} min",
+    "today": "Today",
+    "todayShort": "Today",
+    "booked": "Booked",
+    "noSlots": "No schedule for this day yet.",
+    "noSlotYet": "No time picked",
+    "perHour": "{price}/hour",
+    "legend": {
+      "free": "Free",
+      "booked": "Booked",
+      "selected": "Selected"
+    },
+    "extras": "Extras",
+    "summaryTitle": "Booking summary",
+    "summary": {
+      "field": "Field",
+      "date": "Date",
+      "time": "Time",
+      "rate": "Rate"
+    },
+    "subtotal": "Subtotal",
+    "freeCancel": "Free cancellation up to [X] hours before kick-off",
+    "bookNow": "Book now",
+    "sheetTitle": "Finish booking",
+    "held": {
+      "title": "Your slot is on hold",
+      "description": "Pay the deposit within {minutes} minutes to confirm. We'll send the confirmation by Zalo / SMS."
+    },
+    "cta": {
+      "pickSlot": "Pick a time to continue",
+      "unavailable": "Not enough free time in a row",
+      "hold": "Hold this slot",
+      "pay": "Pay deposit"
+    }
+  },
   "pages": {
     "home": { "title": "Home" },
-    "fieldDetail": { "title": "Field details" },
-    "bookingCreate": { "title": "Book a field" },
+    "booking": { "title": "Book a field" },
     "myBookings": { "title": "My bookings" },
     "profile": { "title": "Profile" },
     "login": { "title": "Log in" },

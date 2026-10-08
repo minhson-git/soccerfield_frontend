@@ -11,8 +11,13 @@ function onChange(event: Event) {
 </script>
 
 <template>
-  <select :value="locale" :aria-label="t('common.language')" @change="onChange">
-    <option v-for="code in SUPPORTED_LOCALES" :key="code" :value="code">
+  <select
+    :value="locale"
+    :aria-label="t('common.language')"
+    class="min-h-11 rounded-full border border-line-strong bg-transparent px-3 text-sm font-semibold text-foreground"
+    @change="onChange"
+  >
+    <option v-for="code in SUPPORTED_LOCALES" :key="code" :value="code" class="text-forest">
       {{ code.toUpperCase() }}
     </option>
   </select>

@@ -12,7 +12,13 @@ export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   // publicRoutes holds the catch-all, but vue-router ranks by specificity, not order
   routes: [...userRoutes, ...ownerRoutes, ...adminRoutes, ...publicRoutes],
-  scrollBehavior: (_to, _from, savedPosition) => savedPosition ?? { top: 0 },
+  scrollBehavior: (to, from, savedPosition) => {
+    if (savedPosition) return savedPosition
+    if (to.hash) return { el: to.hash, behavior: 'smooth' }
+    // Query-only changes (booking selection kept in the URL) must not jump to the top
+    if (to.path === from.path) return false
+    return { top: 0 }
+  },
 })
 
 router.beforeEach(authGuard)

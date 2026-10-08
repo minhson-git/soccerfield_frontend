@@ -2,7 +2,7 @@ import type { Component } from 'vue'
 
 import AuthLayout from './AuthLayout.vue'
 import DashboardLayout from './DashboardLayout.vue'
-import UserLayout from './UserLayout.vue'
+import UserLayout from './user/UserLayout.vue'
 
 export const layouts = {
   user: UserLayout,

@@ -1,0 +1,137 @@
+/*
+ * Design tokens for "Sân Nhà", taken from the Claude Design canvas "Concept đặt sân bóng".
+ * Semantic values live in :root (light) and .dark, then `@theme inline` exposes them as
+ * Tailwind utilities (bg-panel, text-muted, border-line-strong...).
+ */
+
+:root {
+  --background: #f7f9f4;
+  --foreground: #0b1610;
+  --panel: #ffffff;
+  --surface: #f0f4ec;
+  --field: #ffffff;
+  --line: #e1e7dd;
+  --line-strong: #cbd5c7;
+  --muted: #4a5c50;
+  /* Accent mixed 58% toward forest: readable accent-colored text on light grounds */
+  --ink: #5a7222;
+  --chip: #e6ece2;
+
+  --pitch-1: #1f5a3a;
+  --pitch-2: #246543;
+  --pitch-line: #ffffff;
+
+  /* Pressed option (type, day, slot, duration) */
+  --selected: #0b1610;
+  --selected-foreground: #c8f03c;
+  --booked-line: #bcc7b8;
+  --booked-foreground: #66786b;
+
+  /* Inverted blocks: booking summary, floating hero card */
+  --inverse: #0b1610;
+  --inverse-foreground: #f2f5ee;
+  --inverse-muted: #a9b8ad;
+  --inverse-line: #2a4334;
+  --inverse-cta: #c8f03c;
+  --inverse-cta-foreground: #0b1610;
+
+  /* "Đã giữ chỗ" notice inside the summary */
+  --notice: #1b3124;
+  --notice-foreground: #f2f5ee;
+  --notice-muted: #c9d4cc;
+
+  /* Venue section on the home page stays light in both themes */
+  --section-alt: #e8eee4;
+  --section-alt-line: #d3dcd0;
+
+  color-scheme: light;
+}
+
+.dark {
+  --background: #0b1610;
+  --foreground: #f2f5ee;
+  --panel: #101e16;
+  --surface: #13241a;
+  --field: #0f1d15;
+  --line: #1f3328;
+  --line-strong: #2a4334;
+  --muted: #a9b8ad;
+  --ink: #c8f03c;
+  --chip: #1b3124;
+
+  --pitch-1: #10221a;
+  --pitch-2: #12271c;
+  --pitch-line: #f2f5ee;
+
+  --selected: #c8f03c;
+  --selected-foreground: #0b1610;
+  --booked-line: #3a5345;
+  --booked-foreground: #7f9486;
+
+  --inverse: #f2f5ee;
+  --inverse-foreground: #0b1610;
+  --inverse-muted: #45564b;
+  --inverse-line: #b9c4bc;
+  --inverse-cta: #0b1610;
+  --inverse-cta-foreground: #c8f03c;
+
+  --notice: #0b1610;
+  --notice-foreground: #f2f5ee;
+  --notice-muted: #a9b8ad;
+
+  --section-alt: #f2f5ee;
+  --section-alt-line: #dce3dd;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-panel: var(--panel);
+  --color-surface: var(--surface);
+  --color-field: var(--field);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-muted: var(--muted);
+  --color-ink: var(--ink);
+  --color-chip: var(--chip);
+  --color-pitch-1: var(--pitch-1);
+  --color-pitch-2: var(--pitch-2);
+  --color-pitch-line: var(--pitch-line);
+  --color-selected: var(--selected);
+  --color-selected-foreground: var(--selected-foreground);
+  --color-booked-line: var(--booked-line);
+  --color-booked-foreground: var(--booked-foreground);
+  --color-inverse: var(--inverse);
+  --color-inverse-foreground: var(--inverse-foreground);
+  --color-inverse-muted: var(--inverse-muted);
+  --color-inverse-line: var(--inverse-line);
+  --color-inverse-cta: var(--inverse-cta);
+  --color-inverse-cta-foreground: var(--inverse-cta-foreground);
+  --color-notice: var(--notice);
+  --color-notice-foreground: var(--notice-foreground);
+  --color-notice-muted: var(--notice-muted);
+  --color-section-alt: var(--section-alt);
+  --color-section-alt-line: var(--section-alt-line);
+}
+
+@theme {
+  /* Theme-independent brand colors */
+  --color-accent: #c8f03c;
+  --color-forest: #0b1610;
+  --color-chalk: #f2f5ee;
+  /* Text and tags on always-light venue cards */
+  --color-card-muted: #45564b;
+  --color-card-tag: #e6ece7;
+  --color-card-tag-foreground: #24362b;
+
+  --font-sans: 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', 'Be Vietnam Pro', sans-serif;
+
+  --radius-tile: 14px;
+  --radius-card: 20px;
+  --radius-panel: 24px;
+
+  --breakpoint-desktop: 64rem; /* 1024px: mobile ↔ desktop variants (see useDevice) */
+}

@@ -4,14 +4,15 @@ export const publicRoutes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/pages/user/HomePage.vue'),
+    component: () => import('@/pages/user/home/HomePage.vue'),
     meta: { titleKey: 'pages.home.title' },
   },
   {
-    path: '/fields/:fieldId',
-    name: 'field-detail',
-    component: () => import('@/pages/user/FieldDetailPage.vue'),
-    meta: { titleKey: 'pages.fieldDetail.title' },
+    // Venue page + slot picker. Public: login is only required to hold the slot.
+    path: '/branches/:branchId(\\d+)',
+    name: 'branch-booking',
+    component: () => import('@/pages/user/booking/BookingPage.vue'),
+    meta: { titleKey: 'pages.booking.title', immersiveOnMobile: true },
   },
   {
     path: '/login',

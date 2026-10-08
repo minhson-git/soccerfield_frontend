@@ -74,6 +74,13 @@ export default defineConfigWithVueTs(
 
   ...pluginVue.configs['flat/recommended'],
   vueTsConfigs.recommended,
+  {
+    name: 'app/vue-overrides',
+    rules: {
+      // Type-based props: optional means `undefined`, a default adds nothing
+      'vue/require-default-prop': 'off',
+    },
+  },
 
   {
     name: 'app/import-resolver',
@@ -81,6 +88,28 @@ export default defineConfigWithVueTs(
     settings: { 'import/resolver': { typescript: { alwaysTryTypes: true } } },
   },
   architecture,
+
+  // Device variants share state through composables, never through each other
+  {
+    name: 'app/device-variants',
+    files: ['src/**/*.mobile.vue'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        { patterns: [{ group: ['**/*.desktop.vue'], message: 'Share logic via a composable.' }] },
+      ],
+    },
+  },
+  {
+    name: 'app/device-variants-desktop',
+    files: ['src/**/*.desktop.vue'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        { patterns: [{ group: ['**/*.mobile.vue'], message: 'Share logic via a composable.' }] },
+      ],
+    },
+  },
 
   {
     ...pluginPlaywright.configs['flat/recommended'],

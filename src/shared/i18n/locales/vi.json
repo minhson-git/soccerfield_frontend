@@ -1,11 +1,35 @@
 {
   "app": {
-    "name": "Soccer Field"
+    "name": "Sân Nhà"
   },
   "common": {
     "logout": "Đăng xuất",
     "language": "Ngôn ngữ",
-    "backHome": "Về trang chủ"
+    "backHome": "Về trang chủ",
+    "back": "Quay lại",
+    "close": "Đóng",
+    "loading": "Đang tải…",
+    "processing": "Đang xử lý…"
+  },
+  "theme": {
+    "toLight": "Chuyển sang giao diện sáng",
+    "toDark": "Chuyển sang giao diện tối"
+  },
+  "nav": {
+    "main": "Điều hướng chính",
+    "breadcrumb": "Đường dẫn",
+    "home": "Trang chủ",
+    "book": "Đặt sân",
+    "nearby": "Sân gần bạn",
+    "howItWorks": "Cách đặt",
+    "contact": "Liên hệ",
+    "login": "Đăng nhập",
+    "bookNow": "Đặt ngay",
+    "myBookings": "Lịch đặt"
+  },
+  "footer": {
+    "contact": "Hotline [Số điện thoại] · [Email]",
+    "forOwners": "Dành cho chủ sân"
   },
   "roles": {
     "CUSTOMER": "Người đặt sân",
@@ -21,10 +45,135 @@
     "submit": "Đăng nhập",
     "loginFailed": "Sai tên đăng nhập hoặc mật khẩu"
   },
+  "date": {
+    "weekdayShort": {
+      "0": "CN",
+      "1": "T2",
+      "2": "T3",
+      "3": "T4",
+      "4": "T5",
+      "5": "T6",
+      "6": "T7"
+    }
+  },
+  "field": {
+    "type": {
+      "FIVE_A_SIDE": "Sân 5",
+      "SEVEN_A_SIDE": "Sân 7",
+      "ELEVEN_A_SIDE": "Sân 11"
+    },
+    "typePlayers": {
+      "FIVE_A_SIDE": "Sân 5 người",
+      "SEVEN_A_SIDE": "Sân 7 người",
+      "ELEVEN_A_SIDE": "Sân 11 người"
+    },
+    "players": "{count} người",
+    "surface": {
+      "ARTIFICIAL": "cỏ nhân tạo",
+      "NATURAL": "cỏ tự nhiên"
+    }
+  },
+  "amenity": {
+    "LIGHTING": "Đèn chiếu sáng",
+    "PARKING": "Bãi gửi xe",
+    "LOCKER_ROOM": "Phòng thay đồ",
+    "CANTEEN": "Căng-tin"
+  },
+  "branch": {
+    "photoPlaceholder": "Ảnh sân",
+    "viewGallery": "Xem thư viện ảnh",
+    "fromRate": "Từ {price}/giờ",
+    "viewSchedule": "Xem lịch & đặt",
+    "openHours": "Mở cửa {open} – {close}",
+    "share": "Chia sẻ",
+    "linkCopied": "Đã sao chép liên kết",
+    "notFound": "Không tìm thấy sân này"
+  },
+  "search": {
+    "area": "Khu vực",
+    "anyArea": "Tất cả khu vực",
+    "fieldType": "Loại sân",
+    "anyType": "Tất cả loại sân",
+    "date": "Ngày",
+    "timeOfDay": "Khung giờ",
+    "timesOfDay": {
+      "MORNING": "Sáng (05:00 – 11:00)",
+      "AFTERNOON": "Chiều (11:00 – 17:00)",
+      "EVENING": "Tối (17:00 – 23:00)"
+    },
+    "submit": "Tìm sân trống"
+  },
+  "home": {
+    "badge": "Sân 5 · Sân 7 · Sân 11",
+    "titleLine1": "Chọn giờ.",
+    "titleLine2": "Chốt sân.",
+    "titleLine3": "Ra đá.",
+    "intro": "Xem lịch trống theo thời gian thực, giữ chỗ trong vài thao tác và nhận xác nhận ngay — không cần gọi điện hỏi chủ sân.",
+    "pitchAlt": "Sơ đồ sân bóng",
+    "nearestSlot": "Khung trống gần nhất",
+    "nearestSlotValue": "Tối nay · {time} · {field}",
+    "nearbyTitle": "Sân gần bạn",
+    "noResults": "Không có sân nào khớp bộ lọc. Thử bỏ bớt điều kiện.",
+    "stepsTitle": "Ba bước là có sân",
+    "step1Title": "Tìm sân trống",
+    "step1Text": "Lọc theo khu vực, loại sân và khung giờ. Lịch cập nhật trực tiếp từ chủ sân.",
+    "step2Title": "Giữ chỗ & đặt cọc",
+    "step2Text": "Chọn giờ, thêm dịch vụ, thanh toán cọc qua ví điện tử hoặc chuyển khoản QR.",
+    "step3Title": "Rủ đội, ra sân",
+    "step3Text": "Chia sẻ link đặt sân cho cả đội, chia tiền sân ngay trong nhóm.",
+    "startBooking": "Bắt đầu đặt sân"
+  },
+  "booking": {
+    "fieldType": "Loại sân",
+    "date": "Ngày",
+    "pickDate": "Chọn ngày",
+    "startTime": "Giờ bắt đầu",
+    "duration": "Thời lượng",
+    "stepFieldType": "1 · Loại sân",
+    "stepDate": "2 · Ngày",
+    "stepStartTime": "3 · Giờ bắt đầu",
+    "stepDuration": "4 · Thời lượng",
+    "scheduleTitle": "Chọn lịch đá",
+    "peakHint": "Từ {time} áp dụng giá cao điểm",
+    "perMatch": "{minutes} phút / trận",
+    "minutes": "{count} phút",
+    "today": "Hôm nay",
+    "todayShort": "Nay",
+    "booked": "Đã đặt",
+    "noSlots": "Sân chưa mở lịch cho ngày này.",
+    "noSlotYet": "Chưa chọn giờ",
+    "perHour": "{price}/giờ",
+    "legend": {
+      "free": "Trống",
+      "booked": "Đã đặt",
+      "selected": "Đang chọn"
+    },
+    "extras": "Thêm dịch vụ",
+    "summaryTitle": "Phiếu đặt sân",
+    "summary": {
+      "field": "Sân",
+      "date": "Ngày",
+      "time": "Giờ",
+      "rate": "Đơn giá"
+    },
+    "subtotal": "Tạm tính",
+    "freeCancel": "Huỷ miễn phí trước giờ đá [X] tiếng",
+    "bookNow": "Đặt ngay",
+    "sheetTitle": "Hoàn tất đặt sân",
+    "held": {
+      "title": "Đã giữ chỗ cho bạn",
+      "description": "Thanh toán cọc trong {minutes} phút để chốt sân. Xác nhận sẽ gửi qua Zalo / SMS."
+    },
+    "cta": {
+      "pickSlot": "Chọn giờ để tiếp tục",
+      "unavailable": "Không đủ thời lượng liên tục",
+      "hold": "Giữ chỗ ngay",
+      "pay": "Thanh toán cọc"
+    }
+  },
   "pages": {
     "home": { "title": "Trang chủ" },
-    "fieldDetail": { "title": "Chi tiết sân" },
-    "bookingCreate": { "title": "Đặt sân" },
+    "booking": { "title": "Đặt sân" },
     "myBookings": { "title": "Lịch sử đặt sân" },
     "profile": { "title": "Hồ sơ" },
     "login": { "title": "Đăng nhập" },

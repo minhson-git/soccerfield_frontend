@@ -16,5 +16,7 @@ declare module 'vue-router' {
     guestOnly?: boolean
     /** i18n key for the document title. */
     titleKey?: string
+    /** Hide the app header/footer on mobile: the page draws its own cover (booking page). */
+    immersiveOnMobile?: boolean
   }
 }
