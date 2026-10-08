@@ -1,0 +1,5 @@
+allowBuilds:
+  esbuild: true
+  vue-demi: true
+  # ships prebuilt binaries; its postinstall is not needed
+  unrs-resolver: false

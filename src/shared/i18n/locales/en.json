@@ -1,0 +1,44 @@
+{
+  "app": {
+    "name": "Soccer Field"
+  },
+  "common": {
+    "logout": "Log out",
+    "language": "Language",
+    "backHome": "Back to home"
+  },
+  "roles": {
+    "CUSTOMER": "Customer",
+    "OWNER": "Field owner",
+    "ADMIN": "Administrator"
+  },
+  "validation": {
+    "required": "This field is required"
+  },
+  "auth": {
+    "identifier": "Username or email",
+    "password": "Password",
+    "submit": "Log in",
+    "loginFailed": "Incorrect username or password"
+  },
+  "pages": {
+    "home": { "title": "Home" },
+    "fieldDetail": { "title": "Field details" },
+    "bookingCreate": { "title": "Book a field" },
+    "myBookings": { "title": "My bookings" },
+    "profile": { "title": "Profile" },
+    "login": { "title": "Log in" },
+    "register": { "title": "Sign up" },
+    "paymentResult": { "title": "Payment result" },
+    "ownerDashboard": { "title": "Dashboard" },
+    "ownerBranches": { "title": "Branches" },
+    "ownerFields": { "title": "Fields" },
+    "ownerBookings": { "title": "Booking schedule" },
+    "adminDashboard": { "title": "System overview" },
+    "adminUsers": { "title": "Users" },
+    "adminBranches": { "title": "Branches" },
+    "adminBookings": { "title": "Bookings" },
+    "forbidden": { "title": "Access denied" },
+    "notFound": { "title": "Page not found" }
+  }
+}

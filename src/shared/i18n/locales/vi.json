@@ -1,0 +1,44 @@
+{
+  "app": {
+    "name": "Soccer Field"
+  },
+  "common": {
+    "logout": "Đăng xuất",
+    "language": "Ngôn ngữ",
+    "backHome": "Về trang chủ"
+  },
+  "roles": {
+    "CUSTOMER": "Người đặt sân",
+    "OWNER": "Chủ sân",
+    "ADMIN": "Quản trị viên"
+  },
+  "validation": {
+    "required": "Trường này là bắt buộc"
+  },
+  "auth": {
+    "identifier": "Tên đăng nhập hoặc email",
+    "password": "Mật khẩu",
+    "submit": "Đăng nhập",
+    "loginFailed": "Sai tên đăng nhập hoặc mật khẩu"
+  },
+  "pages": {
+    "home": { "title": "Trang chủ" },
+    "fieldDetail": { "title": "Chi tiết sân" },
+    "bookingCreate": { "title": "Đặt sân" },
+    "myBookings": { "title": "Lịch sử đặt sân" },
+    "profile": { "title": "Hồ sơ" },
+    "login": { "title": "Đăng nhập" },
+    "register": { "title": "Đăng ký" },
+    "paymentResult": { "title": "Kết quả thanh toán" },
+    "ownerDashboard": { "title": "Tổng quan" },
+    "ownerBranches": { "title": "Chi nhánh" },
+    "ownerFields": { "title": "Sân" },
+    "ownerBookings": { "title": "Lịch đặt sân" },
+    "adminDashboard": { "title": "Tổng quan hệ thống" },
+    "adminUsers": { "title": "Người dùng" },
+    "adminBranches": { "title": "Chi nhánh" },
+    "adminBookings": { "title": "Đơn đặt sân" },
+    "forbidden": { "title": "Không có quyền truy cập" },
+    "notFound": { "title": "Không tìm thấy trang" }
+  }
+}
